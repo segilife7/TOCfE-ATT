@@ -1,1 +1,21 @@
-메롱
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOCfE Ambitious Target Tree Builder</title>
+    <!-- CDN 제거 (빌드시 TailwindCSS가 포함됨) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .step-transition { transition: all 0.3s ease-in-out; }
+        .node-active { stroke: #10b981; stroke-width: 3px; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 여기가 문제! /src/main.tsx 로 변경 -->
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
